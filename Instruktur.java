@@ -13,12 +13,11 @@ public class Instruktur {
         return new Konten(tipeKonten, idTipeKonten, bahasa, judul);
     }
 
-
     public void getInstruktur(){
         System.out.println("Instruktur : " + this.namaInstruktur);
         System.out.println("ID Instruktur : " + this.idInstruktur);
         System.out.println("Jenis Kelamin : " + this.jenisKelamin);
         System.out.println("Bidang Keahlian : " + this.bidangKeahlian);
-    }
 
+    }
 }
