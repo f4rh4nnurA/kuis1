@@ -23,7 +23,7 @@ class Ujian {
 
     public void tampilkanInfoUjian() {
         System.out.println("Jumlah Soal         : " + jumlahSoal);
-        System.out.println("Nila                : " + nilai);
+        System.out.println("Nilai                : " + nilai);
         System.out.println("Status Kelulusan    : " + status);
     }
 }

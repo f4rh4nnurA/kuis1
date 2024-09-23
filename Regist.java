@@ -1,21 +1,18 @@
 class Registrasi {
-    Peserta peserta;  
+    Peserta peserta;
     String username;
     String password;
 
-  
     public Registrasi(Peserta peserta, String username, String password) {
         this.peserta = peserta;
         this.username = username;
         this.password = password;
     }
 
-  
     public void daftarkanPeserta() {
-        System.out.println("Peserta " + peserta.getNamaPeserta() + " berhasil didaftarkan dengan username: " + username);
+        System.out.println("Peserta " + peserta.getNama() + " berhasil didaftarkan dengan username: " + username);
     }
 
-   
     public Peserta getPeserta() {
         return peserta;
     }
