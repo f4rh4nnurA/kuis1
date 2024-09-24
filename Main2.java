@@ -39,14 +39,15 @@ public class Main2 {
 
         Login login1 = new Login(registrasi1);
 
-        System.out.print("Masukkan username: ");
-        String inputUsername = sc.nextLine();
-        System.out.print("Masukkan password: ");
-        String inputPassword = sc.nextLine();
-
-        System.out.println("===========================================================================");
-
-        login1.autentikasi(inputUsername, inputPassword);
+        boolean loginSukses = false;
+        while (!loginSukses) {
+            System.out.print("Masukkan username: ");
+            String inputUsername = sc.nextLine();
+            System.out.print("Masukkan password: ");
+            String inputPassword = sc.nextLine();
+            System.out.println("===========================================================================");
+            loginSukses = login1.autentikasi(inputUsername, inputPassword);
+        }
 
         System.out.println("===========================================================================");
 
