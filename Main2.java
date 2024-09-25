@@ -77,34 +77,47 @@ public class Main2 {
 
                     switch (pilihKursus) {
                         case 1:
-                            kursusDipilih = new Kursus("Pemrograman Java", "K001", "Teknologi", 500000, Duration.ofHours(10));
+                            kursusDipilih = new Kursus("Pemrograman Java", "K001", "Teknologi", 500000,
+                                    Duration.ofHours(10));
                             videoDipilih = new Video("Video", "C001", "Indonesia", "Tutorial Java", "Inggris");
-                            artikelDipilih = new Artikel("Artikel", "C002", "Indonesia", "Pemrograman Berorientasi Objek", "Jane Smith", "PDF");
-                            ujianDipilih = new Ujian(50, 85, "2024-09-25", "Ujian", "U001", "Indonesia", "Ujian Pemrograman Java");
+                            artikelDipilih = new Artikel("Artikel", "C002", "Indonesia",
+                                    "Pemrograman Berorientasi Objek", "Jane Smith", "PDF");
+                            ujianDipilih = new Ujian(50, 85, "2024-09-25", "Ujian", "U001", "Indonesia",
+                                    "Ujian Pemrograman Java");
                             break;
                         case 2:
-                            kursusDipilih = new Kursus("Pemrograman C++", "K002", "Teknologi", 400000, Duration.ofHours(8));
+                            kursusDipilih = new Kursus("Pemrograman C++", "K002", "Teknologi", 400000,
+                                    Duration.ofHours(8));
                             videoDipilih = new Video("Video", "C003", "Indonesia", "Tutorial C++", "Indonesia");
-                            artikelDipilih = new Artikel("Artikel", "C004", "Indonesia", "Pemrograman Website", "Joe Mama", "PDF");
-                            ujianDipilih = new Ujian(40, 70, "2024-09-26", "Ujian", "U002", "Indonesia", "Ujian Pemrograman C++");
+                            artikelDipilih = new Artikel("Artikel", "C004", "Indonesia", "Pemrograman Website",
+                                    "Joe Mama", "PDF");
+                            ujianDipilih = new Ujian(40, 70, "2024-09-26", "Ujian", "U002", "Indonesia",
+                                    "Ujian Pemrograman C++");
                             break;
                         case 3:
-                            kursusDipilih = new Kursus("Bahasa Inggris", "K003", "Bahasa", 200000, Duration.ofHours(12));
+                            kursusDipilih = new Kursus("Bahasa Inggris", "K003", "Bahasa", 200000,
+                                    Duration.ofHours(12));
                             videoDipilih = new Video("Video", "C005", "Indonesia", "Grammar", "Inggris");
-                            artikelDipilih = new Artikel("Artikel", "C006", "Indonesia", "Cara Kerja Present Tense", "John Smith", "PDF");
-                            ujianDipilih = new Ujian(60, 90, "2024-09-27", "Ujian", "U003", "Indonesia", "Ujian Bahasa Inggris");
+                            artikelDipilih = new Artikel("Artikel", "C006", "Indonesia", "Cara Kerja Present Tense",
+                                    "John Smith", "PDF");
+                            ujianDipilih = new Ujian(60, 90, "2024-09-27", "Ujian", "U003", "Indonesia",
+                                    "Ujian Bahasa Inggris");
                             break;
                         case 4:
                             kursusDipilih = new Kursus("Bahasa Rusia", "K004", "Bahasa", 300000, Duration.ofHours(8));
                             videoDipilih = new Video("Video", "C007", "Rusia", "Bahasa Rusia", "Indonesia");
-                            artikelDipilih = new Artikel("Artikel", "C008", "Indonesia", "Kata-kata Rusia", "Putin Smith", "PDF");
-                            ujianDipilih = new Ujian(30, 95, "2024-09-28", "Ujian", "U004", "Rusia", "Ujian Bahasa Rusia");
+                            artikelDipilih = new Artikel("Artikel", "C008", "Indonesia", "Kata-kata Rusia",
+                                    "Putin Smith", "PDF");
+                            ujianDipilih = new Ujian(30, 95, "2024-09-28", "Ujian", "U004", "Rusia",
+                                    "Ujian Bahasa Rusia");
                             break;
                         case 5:
                             kursusDipilih = new Kursus("Basis Data", "K005", "Teknologi", 600000, Duration.ofHours(15));
                             videoDipilih = new Video("Video", "C009", "Inggris", "XML", "Inggris");
-                            artikelDipilih = new Artikel("Artikel", "C010", "Indonesia", "Cara Kerja Basis Data", "Jane Smith", "PDF");
-                            ujianDipilih = new Ujian(45, 65, "2024-09-29", "Ujian", "U005", "Indonesia", "Ujian Basis Data");
+                            artikelDipilih = new Artikel("Artikel", "C010", "Indonesia", "Cara Kerja Basis Data",
+                                    "Jane Smith", "PDF");
+                            ujianDipilih = new Ujian(45, 65, "2024-09-29", "Ujian", "U005", "Indonesia",
+                                    "Ujian Basis Data");
                             break;
                         default:
                             System.out.println("Pilihan Tidak Tersedia");
@@ -238,7 +251,7 @@ public class Main2 {
                             case 3:
                                 // Ujian
                                 System.out.println("Memulai Ujian...");
-                                ujianDipilih.statuskanKelulusan();  // Memastikan status di-set sebelum ditampilkan
+                                ujianDipilih.statuskanKelulusan(); // Memastikan status di-set sebelum ditampilkan
                                 ujianDipilih.tampilkanInfo(); // Tampilkan info setelah status di-set
                                 boolean lulus = ujianDipilih.statuskanKelulusan();
                                 if (lulus) {
