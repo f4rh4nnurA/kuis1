@@ -13,4 +13,4 @@ public class Pembayaran {
         System.out.println("Total pembayaran: " + this.jumlahTotal);
         System.out.println("Metode pembayaran: " + this.metodePembayaran);
     }
-    }
+}
