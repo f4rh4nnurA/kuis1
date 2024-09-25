@@ -35,8 +35,4 @@ public class Artikel extends Konten {
         System.out.println("Format: " + format);
         System.out.println("Komentar: " + komentarPengguna);
     }
-
-    public String tampilkanIsiArtikel() {
-        return "Isi Artikel:\n" + "Penulis: " + penulis + "\nFormat: " + format + "\nJudul: " + getJudul();
-    }
 }
